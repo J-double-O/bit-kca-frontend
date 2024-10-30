@@ -1,0 +1,99 @@
+/* General styling for the app container */
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Centered content and header styles */
+.App-header {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+  max-width: 450px;
+  width: 100%;
+}
+
+/* Logo animation with smaller size */
+.App-logo {
+  height: 70px;
+  margin-bottom: 20px;
+  animation: App-logo-spin infinite 12s linear;
+}
+
+/* Button styling with a gradient effect */
+button {
+  background: linear-gradient(135deg, #6c63ff, #36b3d1);
+  color: #fff;
+  padding: 12px 24px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 16px rgba(108, 99, 255, 0.3);
+}
+
+/* Input field styling with focus effects */
+input[type="text"] {
+  width: 85%;
+  padding: 12px;
+  margin: 16px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+  color: #333;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #6c63ff;
+  box-shadow: 0px 4px 12px rgba(108, 99, 255, 0.2);
+}
+
+/* Paragraph and message styling */
+p {
+  font-size: 1.1em;
+  color: #444;
+  margin: 12px 0;
+  font-weight: 500;
+}
+
+/* Keyframe for logo rotation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .App-header {
+    padding: 20px;
+  }
+
+  button, input[type="text"] {
+    font-size: 0.9em;
+    width: 100%;
+  }
+
+  .App-logo {
+    height: 50px;
+  }
+}
